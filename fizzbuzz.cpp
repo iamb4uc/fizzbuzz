@@ -1,8 +1,7 @@
 #include <iostream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    std::ios_base::sync_with_stdio(false); /* Makes input/output faster ig */
 
     for (int i = 1; i <= 100; ++i) {
         bool is_divisible_by_3 = (i % 3 == 0);
@@ -13,7 +12,6 @@ int main() {
         (is_divisible_by_5) ? std::cout << "Buzz\n" :
         std::cout << i << "\n";
     }
-
     return 0;
 }
 
